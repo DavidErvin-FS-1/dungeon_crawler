@@ -1,4 +1,4 @@
-# Dungeon Crawler
+# ⚔️ Dungeon Crawler
 
 - David Ervin
 - Project & Portfolio V
