@@ -13,13 +13,13 @@ function App() {
             <div className='flex items-center justify-center'>
               <Menu />
             </div>
-            <div className='flex gap-4 items-center justify-center'>
+            <div className='flex items-center justify-center gap-4'>
               <Button label='Default' className='btn default' />
               <Button label='Success' className='btn success' />
               <Button label='Error' className='btn error' />
               <Button label='Disabled' className='btn disabled' />
             </div>
-            <div className='flex gap-4 items-center justify-center'>
+            <div className='flex items-center justify-center gap-4'>
               <Button
                 label={<FaCheck className='w-4 h-4' />}
                 className='btn icon'

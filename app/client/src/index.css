@@ -37,7 +37,7 @@ body,
 
   /* Default */
   .btn.default {
-    @apply bg-[#d9d9d9] shadow-[0_4px_#adadad] hover:shadow-[0_2px_#adadad] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#d9d9d9] shadow-[0_4px_#adadad] hover:shadow-[0_2px_#adadad]  active:shadow-none transition-all;
   }
   .btn.default .inner-btn {
     @apply inset-ring-black/15 bg-[#adadad]/25 text-dg-black;
@@ -53,7 +53,7 @@ body,
 
   /* Success */
   .btn.success {
-    @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33]  active:shadow-none transition-all;
   }
   .btn.success .inner-btn {
     @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-black;
@@ -61,7 +61,7 @@ body,
 
   /* Error */
   .btn.error {
-    @apply bg-[#DE4547]  shadow-[0_4px_#AC292B] hover:shadow-[0_2px_#AC292B] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#DE4547]  shadow-[0_4px_#AC292B] hover:shadow-[0_2px_#AC292B]  active:shadow-none transition-all;
   }
   .btn.error .inner-btn {
     @apply inset-ring-black/20 text-dg-white bg-[#AC292B]/25;
@@ -69,7 +69,7 @@ body,
 
   /* Icon */
   .btn.icon {
-    @apply bg-[#d9d9d9] rounded-full shadow-[0_4px_#adadad] hover:shadow-[0_2px_#adadad] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#d9d9d9] rounded-full shadow-[0_4px_#adadad] hover:shadow-[0_2px_#adadad]  active:shadow-none transition-all;
   }
   .btn.icon .inner-btn {
     @apply inset-ring-black/15 bg-[#adadad]/25 text-dg-black rounded-full px-2 py-2;
@@ -85,7 +85,7 @@ body,
 
   /* Icon Success */
   .btn.icon.success {
-    @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33]  active:shadow-none transition-all;
   }
   .btn.icon.success .inner-btn {
     @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-black;
@@ -93,7 +93,7 @@ body,
 
   /* Icon Error */
   .btn.icon.error {
-    @apply bg-[#DE4547] shadow-[0_4px_#AC292B] hover:shadow-[0_2px_#AC292B] active:scale-95 active:shadow-none transition-all;
+    @apply bg-[#DE4547] shadow-[0_4px_#AC292B] hover:shadow-[0_2px_#AC292B]  active:shadow-none transition-all;
   }
   .btn.icon.error .inner-btn {
     @apply inset-ring-black/20 text-dg-white bg-[#AC292B]/25;
@@ -101,7 +101,7 @@ body,
 
   /* Menu Btn */
   .btn.menu {
-    @apply bg-[#d9d9d9]  active:scale-95 transition-all;
+    @apply bg-[#d9d9d9]   transition-all;
   }
   .btn.menu .inner-btn {
     @apply inset-ring-black/20 bg-[#adadad]/25 text-dg-black;
