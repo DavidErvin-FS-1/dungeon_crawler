@@ -74,4 +74,36 @@ body,
   .btn.icon .inner-btn {
     @apply inset-ring-black/15 bg-[#adadad]/25 text-dg-black rounded-full px-2 py-2;
   }
+
+  /* Icon Disabled */
+  .btn.icon.disabled {
+    @apply bg-[#a6a6a6] shadow-none;
+  }
+  .btn.icon.disabled .inner-btn {
+    @apply inset-ring-black/25 bg-[#5a5a5a]/25 text-dg-black/50 shadow-none;
+  }
+
+  /* Icon Success */
+  .btn.icon.success {
+    @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33] active:scale-95 active:shadow-none transition-all;
+  }
+  .btn.icon.success .inner-btn {
+    @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-black;
+  }
+
+  /* Icon Error */
+  .btn.icon.error {
+    @apply bg-[#DE4547] shadow-[0_4px_#AC292B] hover:shadow-[0_2px_#AC292B] active:scale-95 active:shadow-none transition-all;
+  }
+  .btn.icon.error .inner-btn {
+    @apply inset-ring-black/20 text-dg-white bg-[#AC292B]/25;
+  }
+
+  /* Menu Btn */
+  .btn.menu {
+    @apply bg-[#d9d9d9]  active:scale-95 transition-all;
+  }
+  .btn.menu .inner-btn {
+    @apply inset-ring-black/20 bg-[#adadad]/25 text-dg-black;
+  }
 }
