@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { FaCaretDown } from 'react-icons/fa6'
-import Button from '../Button'
+import Button from './Button'
 
 function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false)
