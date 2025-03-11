@@ -14,14 +14,14 @@ function App() {
               <Menu />
             </div>
             <div className='flex gap-4 items-center justify-center'>
-              <Button label='Click Me' className='btn default' />
-              <Button label='Click Me' className='btn success' />
-              <Button label='Click Me' className='btn error' />
-              <Button label='Click Me' className='btn disabled' />
+              <Button label='Default' className='btn default' />
+              <Button label='Success' className='btn success' />
+              <Button label='Error' className='btn error' />
+              <Button label='Disabled' className='btn disabled' />
             </div>
             <div className='flex gap-4 items-center justify-center'>
               <Button
-                label={<FaXmark className='w-4 h-4' />}
+                label={<FaCheck className='w-4 h-4' />}
                 className='btn icon'
               />
               <Button
@@ -29,11 +29,11 @@ function App() {
                 className='btn icon success'
               />
               <Button
-                label={<FaCheck className='w-4 h-4' />}
+                label={<FaXmark className='w-4 h-4' />}
                 className='btn icon error'
               />
               <Button
-                label={<FaCheck className='w-4 h-4' />}
+                label={<FaXmark className='w-4 h-4' />}
                 className='btn icon disabled'
               />
             </div>
