@@ -12,7 +12,7 @@ function Header() {
         </Link>
         <div className='flex items-center gap-2'>
           <Link to='/login'>
-            <Button label='Log In' className='btn default min-w-20' />
+            <Button label='Log In' className='btn success min-w-20' />
           </Link>
           <Link to='/signup'>
             <Button label='Sign Up' className='btn default min-w-20' />
