@@ -33,14 +33,14 @@ function Menu() {
       />
 
       {isMenuOpen && (
-        <ul className='absolute bg-[#d9d9d9] shadow-[0_4px_#adadad] transition-shadow w-64 p-1 rounded-md mt-1 flex flex-col items-center justify-center gap-1'>
-          <li className='w-full h-full px-2 py-1 font-bold rounded-md inset-ring inset-ring-black/15 bg-[#adadad]/25 text-dg-black hover:bg-[#adadad]/50'>
+        <ul className='absolute right-0 bg-[#d9d9d9] shadow-[0_4px_#adadad] transition-shadow w-64 p-1 rounded-md mt-1 flex flex-col items-center justify-center gap-1'>
+          <li className='w-full h-full px-2 py-1 font-bold rounded-md hover:inset-ring hover:inset-ring-black/15 text-dg-black hover:bg-[#adadad]/75'>
             Item 1
           </li>
-          <li className='w-full h-full px-2 py-1 font-bold rounded-md inset-ring inset-ring-black/15 bg-[#adadad]/25 text-dg-black hover:bg-[#adadad]/50'>
+          <li className='w-full h-full px-2 py-1 font-bold rounded-md hover:inset-ring hover:inset-ring-black/15 text-dg-black hover:bg-[#adadad]/75'>
             Item 2
           </li>
-          <li className='w-full h-full px-2 py-1 font-bold rounded-md inset-ring inset-ring-black/15 bg-[#adadad]/25 text-dg-black hover:bg-[#adadad]/50'>
+          <li className='w-full h-full px-2 py-1 font-bold rounded-md hover:inset-ring hover:inset-ring-black/15 text-dg-black hover:bg-[#adadad]/75'>
             Item 3
           </li>
         </ul>
