@@ -60,7 +60,7 @@ body,
     @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33]  active:shadow-none transition-all;
   }
   .btn.success .inner-btn {
-    @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-black;
+    @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-white;
   }
 
   /* Error */
@@ -92,7 +92,7 @@ body,
     @apply bg-[#69DB7C] shadow-[0_4px_#1E9B33] hover:shadow-[0_2px_#1E9B33]  active:shadow-none transition-all;
   }
   .btn.icon.success .inner-btn {
-    @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-black;
+    @apply inset-ring-black/20 bg-[#1E9B33]/25 text-dg-white;
   }
 
   /* Icon Error */
