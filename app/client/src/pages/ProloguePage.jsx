@@ -19,7 +19,7 @@ function ProloguePage() {
     }
 
     axios
-      .get('http://localhost:5000/api/prologue', {
+      .get('http://localhost:3001/api/prologue', {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

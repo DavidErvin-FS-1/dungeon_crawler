@@ -14,7 +14,7 @@ function SignupPage() {
     e.preventDefault()
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/auth/signup',
+        'http://localhost:3001/api/auth/signup',
         {
           email,
           username,
@@ -39,7 +39,7 @@ function SignupPage() {
             Email
           </label>
           <Input
-            type='text'
+            type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder='Enter your email'
