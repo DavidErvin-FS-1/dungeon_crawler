@@ -23,7 +23,7 @@ function SignupPage() {
       )
       localStorage.setItem('token', response.data.token)
       // Redirect to home page after successful signup
-      navigate('/')
+      navigate('/login')
     } catch (error) {
       console.error('Signup error:', error)
       alert(error.response?.data?.message || 'Signup failed')
