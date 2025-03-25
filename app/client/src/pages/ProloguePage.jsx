@@ -9,17 +9,17 @@ function ProloguePage() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const navigate = useNavigate()
 
-  // Fetch prologue from the server on mount
+  // Check authentication and fetch the prologue story on mount
   useEffect(() => {
     const token = localStorage.getItem('token')
     if (!token) {
-      // If no token, redirect to login
+      // If not logged in, send the user back to login
       navigate('/login')
       return
     }
 
     axios
-      .get('http://localhost:3001/api/prologue', {
+      .get('http://localhost:5000/api/prologue', {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -27,21 +27,21 @@ function ProloguePage() {
       })
       .catch((error) => {
         console.error('Error fetching prologue:', error)
-        alert('Could not load prologue. Please try again.')
+        alert(error.response?.data?.message || 'Could not load the prologue.')
       })
   }, [navigate])
 
-  // Handler to advance the story
+  // Advance to the next segment of the story or navigate away at the end
   const handleNext = useCallback(() => {
     if (currentIndex < storySegments.length - 1) {
       setCurrentIndex((prev) => prev + 1)
     } else {
-      // End of story: navigate to next page (e.g., game start or allocate stats)
+      // Once the prologue is done, redirect to the next page (e.g., allocate-stats)
       navigate('/allocate-stats')
     }
   }, [currentIndex, storySegments, navigate])
 
-  // Listen for "Enter" key press to advance the story
+  // Allow "Enter" key to progress the story
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.key === 'Enter') {
