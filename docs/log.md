@@ -57,3 +57,23 @@ This week I was able to create a few more components and style them with Tailwin
 #### 🔮 &nbsp; **Next Steps**
 
 Next steps are to continue working on the client-side of the game alongside the server side. I want to get the game logic and server side working so that I can test the game components and see how they interact with each other. The terminal game component will require a lot of attention as it will require data to be stored and show to the player of each choice that character makes and also the outcome of those choices. Most of the logic will be handled on the server side as random events will occur and the player will have to make choices based on those events (e.g. found a locked door, do you pick the lock or try to break it down?). I also want to get the game state working so that the player can see their stats and progress.
+
+<br/>
+
+### Week 3
+
+#### ⚙️ &nbsp; **Overview**
+
+This week I turned my focus to the server side of the game. I created a new sever directory and initialized a new Node.js project. I installed the necessary dependencies such as Express for the server, Mongoose for MongoDB interactions, etc. I created a basic server setup with Express and connected to a MongoDB database. Then it was time to create the necessary models for the game. I created a user model to handle user details (e.g. email, username, password) and coded the logic for user registration and login. Trying to get ahead a little I locked into creating a prologue for game to introduce the player to the game world and story. This prologue will be displayed to the player when they first login to the game utilizing API calls to retrieve the data from the server.
+
+#### 🌵 &nbsp; **Challenges**
+
+This week wasn't much of a challenge for me. Switching to server side development put me in my comfort zone. I was able to get the server setup and connected to a MongoDB database without any issues. Creating the initial user model and logic for user registration and login was straightforward. The prologue was a little tricky as I wanted to create a simple text-based introduction to the game world and story. I had to think about how to structure the data so that it could be easily retrieved and displayed to the player and how to handle showing the prologue line by line to the player allowing them to read at their own pace and click to continue.
+
+#### 🏆 &nbsp; **Accomplishments**
+
+This week I was able to create a new server directory and initialize a new Node.js project. I installed the necessary dependencies such as Express for the server, Mongoose for MongoDB interactions, etc. I created a basic server setup with Express and connected to a MongoDB database. I created a user model to handle user details (e.g. email, username, password) and coded the logic for user registration and login. I also started working on the prologue for the game to introduce the player to the game world and story.
+
+#### 🔮 &nbsp; **Next Steps**
+
+Next steps are to continue working on the server side of the game. I want to ensure the prologue is working correctly and that the players only see it when they first login to the game. I also plan to add stats to the user model (e.g. health, strength, agility), this will then lead into allowing the player to allocate their stats after reading the prologue.
