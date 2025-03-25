@@ -19,7 +19,7 @@ function ProloguePage() {
     }
 
     axios
-      .get('http://localhost:5000/api/prologue', {
+      .get('http://localhost:3001/api/prologue', {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -36,10 +36,9 @@ function ProloguePage() {
     if (currentIndex < storySegments.length - 1) {
       setCurrentIndex((prev) => prev + 1)
     } else {
-      // Once the prologue is done, redirect to the next page (e.g., allocate-stats)
-      navigate('/allocate-stats')
+      // ...
     }
-  }, [currentIndex, storySegments, navigate])
+  }, [currentIndex, storySegments])
 
   // Allow "Enter" key to progress the story
   useEffect(() => {
