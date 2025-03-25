@@ -38,4 +38,22 @@ This week I learned a lot about web scraping and the rules that come with it. I 
 
 Next steps are to get some more components coded and styled with Tailwind CSS (e.g. forms, input fields, game components, etc.) and begin working on the game pages design and layout.
 
-git push -d <remote_name> <branchname>
+<br/>
+
+### Week 2
+
+#### ⚙️ &nbsp; **Overview**
+
+This week I continued to work on the client-side of the game. I created a few more components and styled them with Tailwind CSS (e.g. forms, input fields, menu, etc.). I also started working on the game pages design and layout. I created a few pages and styled them with Tailwind CSS (e.g. homepage, login, register, etc.). I was looking at how to implement the game logic for the game components and how to handle the game state. I want it data, e.g. player stats, to be stored in a database and retrieved when needed but also be reactive to changes as the game progresses. I began by creating an allocate stats form that allows the player to allocate their stats. This will tie into the game logic / server side later on. As for the game components themselves, the sidebar and the game terminal, require more attention. Both of these components will require server side logic to handle the game state and player actions.
+
+#### 🌵 &nbsp; **Challenges**
+
+Time is my biggest challenge this week. As a father of a new born, time has been hard to come by. I have been trying to balance my 3 year old and my new born, and get enough sleep to function. I have been able to get some work done, but not as much as I would like to. With that being said, I think I have made some good progress on the client-side of the game but have concerns about the project scope and whether I will have a complete project by the end of the term.
+
+#### 🏆 &nbsp; **Accomplishments**
+
+This week I was able to create a few more components and style them with Tailwind CSS. I also started working on the game pages design and layout. I was able to create a few pages and style them with Tailwind CSS. I also started working on the game logic for the game components and how to handle the game state. I created an allocate stats form that allows the player to allocate their stats. This will tie into the game logic / server side later on.
+
+#### 🔮 &nbsp; **Next Steps**
+
+Next steps are to continue working on the client-side of the game alongside the server side. I want to get the game logic and server side working so that I can test the game components and see how they interact with each other. The terminal game component will require a lot of attention as it will require data to be stored and show to the player of each choice that character makes and also the outcome of those choices. Most of the logic will be handled on the server side as random events will occur and the player will have to make choices based on those events (e.g. found a locked door, do you pick the lock or try to break it down?). I also want to get the game state working so that the player can see their stats and progress.
