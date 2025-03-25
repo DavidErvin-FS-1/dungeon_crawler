@@ -1,5 +1,6 @@
+import axios from 'axios'
 import { useState } from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import Button from '../components/Button'
 import Header from '../components/Header'
 import Input from '../components/Input'
@@ -7,9 +8,25 @@ import Input from '../components/Input'
 function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
+    try {
+      const response = await axios.post(
+        'http://localhost:3001/api/auth/login',
+        {
+          email,
+          password,
+        }
+      )
+      localStorage.setItem('token', response.data.token)
+      // Redirect to home page after successful login
+      navigate('/prologue')
+    } catch (error) {
+      console.error('Login error:', error)
+      alert(error.response?.data?.message || 'Login failed')
+    }
   }
 
   return (
@@ -24,7 +41,7 @@ function LoginPage() {
               Email
             </label>
             <Input
-              type={'text'}
+              type='text'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder='Enter your email'
@@ -33,7 +50,7 @@ function LoginPage() {
               Password
             </label>
             <Input
-              type={'password'}
+              type='password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder='Enter your password'
@@ -53,7 +70,7 @@ function LoginPage() {
 
             <div className='flex flex-col justify-center mt-2 gap-2'>
               <Button
-                label={'Login'}
+                label='Login'
                 className='btn success text-xl'
                 onClick={handleSubmit}
               />
