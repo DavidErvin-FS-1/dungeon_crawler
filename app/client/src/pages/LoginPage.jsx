@@ -22,7 +22,7 @@ function LoginPage() {
       )
       localStorage.setItem('token', response.data.token)
       // Redirect to home page after successful login
-      navigate('/')
+      navigate('/prologue')
     } catch (error) {
       console.error('Login error:', error)
       alert(error.response?.data?.message || 'Login failed')
