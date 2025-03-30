@@ -54,10 +54,10 @@ function AdventurePage() {
   return (
     <>
       <Header />
-      <main className='container flex flex-col items-center justify-center gap-4 p-4 mx-auto h-dvh'>
+      <main className='container flex flex-col items-center justify-center gap-4 p-4 mx-auto h-dvh max-w-xl'>
         <div className='story text-center'>
           <p className='text-xl whitespace-pre-line'>{currentNode.text}</p>
-          <div className='decision-buttons flex gap-4 mt-4'>
+          <div className='decision-buttons flex gap-4 mt-4 items-center justify-center mx-4'>
             {currentNode.yes && (
               <Button
                 label='Yes'
