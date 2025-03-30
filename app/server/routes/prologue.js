@@ -15,7 +15,7 @@ const prologueStory = [
   'The night is thick with both dread and hope, setting the stage for an adventure where only the brave dare to uncover the truth.',
 ]
 
-router.get('/', authMiddleware, (req, res) => {
+router.get('/prologue', authMiddleware, (req, res) => {
   res.json({ story: prologueStory })
 })
 
