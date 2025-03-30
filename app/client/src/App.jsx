@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router'
-import AllocateStatsPage from './pages/AllocateStatsPage'
+import AdventurePage from './pages/AdventurePage'
+// import AllocateStatsPage from './pages/AllocateStatsPage'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import ProloguePage from './pages/ProloguePage'
@@ -12,6 +13,7 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/signup' element={<SignupPage />} />
       <Route path='/prologue' element={<ProloguePage />} />
+      <Route path='/adventure' element={<AdventurePage />} />
     </Routes>
   )
 }
