@@ -1,5 +1,6 @@
+import axios from 'axios'
 import { useState } from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import Button from '../components/Button'
 import Input from '../components/Input'
 
@@ -7,22 +8,38 @@ function SignupPage() {
   const [email, setEmail] = useState('')
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
+    try {
+      const response = await axios.post(
+        'http://localhost:3001/api/auth/signup',
+        {
+          email,
+          username,
+          password,
+        }
+      )
+      localStorage.setItem('token', response.data.token)
+      // Redirect to home page after successful signup
+      navigate('/login')
+    } catch (error) {
+      console.error('Signup error:', error)
+      alert(error.response?.data?.message || 'Signup failed')
+    }
   }
 
   return (
     <main className='container flex flex-col items-center justify-center gap-4 p-4 mx-auto h-dvh'>
-      <h1 className='text-4xl font-bold'>Login</h1>
-
+      <h1 className='text-4xl font-bold'>Sign Up</h1>
       <form onSubmit={handleSubmit} className='form min-w-md'>
         <div className='form-content'>
           <label htmlFor='email' className='text-dg-black'>
             Email
           </label>
           <Input
-            type={'text'}
+            type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder='Enter your email'
@@ -31,7 +48,7 @@ function SignupPage() {
             Username
           </label>
           <Input
-            type={'text'}
+            type='text'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder='Enter your username'
@@ -40,7 +57,7 @@ function SignupPage() {
             Password
           </label>
           <Input
-            type={'password'}
+            type='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder='Enter your password'
@@ -60,7 +77,7 @@ function SignupPage() {
 
           <div className='flex flex-col justify-center mt-2 gap-2'>
             <Button
-              label={'Sign Up'}
+              label='Sign Up'
               className='btn success text-xl'
               onClick={handleSubmit}
             />

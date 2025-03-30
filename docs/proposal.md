@@ -88,3 +88,7 @@ Changes have been made to the original project proposal to reflect the current s
 - Target Market: The target market has been updated to include people of all ages who enjoy RPG games, and are looking for a quick, casual gaming experience.
 - User Profile / Persona: The user profile has been updated to reflect the target market changes.
 - Added `**Progression**` to `## Pain Points` to reflect the importance of feeling like progress is being made in the game in a decent amount of time so players can feel like they are making progress and not getting bored or feeling like they grind too much.
+
+## Change Order
+
+The initial project proposal included a text-based RPG game with a working inventory system, character creation, and a combat system. However, due to time constraints, the project has been scaled back to a smaller, more manageable scope. Instead of diving into a full-fledged RPG game, the focus will be on creating a simple text-based storytelling game that allows players to make choices and progress through a story. You can think of it as a "choose your own adventure" style game, where players can make decisions that affect the outcome of the story. No character creation, inventory system, or combat system will be included in the initial version of the game.
