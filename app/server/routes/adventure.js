@@ -49,7 +49,7 @@ const adventureStory = {
   },
 }
 
-router.get('/adventure', authMiddleware, (req, res) => {
+router.get('/', authMiddleware, (req, res) => {
   res.json({ story: adventureStory })
 })
 
