@@ -1,4 +1,4 @@
-# Research 2 - Security, Innovation, and Risk Management
+# Research 3 - Security, Innovation, and Risk Management
 
 - **Research Notes - Milestone 3**
 - **David Ervin**
