@@ -36,9 +36,9 @@ function ProloguePage() {
     if (currentIndex < storySegments.length - 1) {
       setCurrentIndex((prev) => prev + 1)
     } else {
-      // ...
+      navigate('/adventure')
     }
-  }, [currentIndex, storySegments])
+  }, [currentIndex, storySegments, navigate])
 
   // Allow "Enter" key to progress the story
   useEffect(() => {
