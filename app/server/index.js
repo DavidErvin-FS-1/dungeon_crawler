@@ -30,11 +30,9 @@ app.use(express.urlencoded({ extended: true }))
 // Routes
 const authRoutes = require('./routes/auth')
 const prologueRoutes = require('./routes/prologue')
-const adventureRoutes = require('./routes/adventure')
 
 app.use('/api/auth', authRoutes)
-app.use('/api/prologue', prologueRoutes)
-app.use('/api/adventure', adventureRoutes)
+app.use('/api', prologueRoutes)
 
 // Error handling middleware
 app.use((err, req, res, next) => {
