@@ -1,0 +1,17 @@
+{
+  "name": "dungeon_crawler",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/DavidErvin-FS-1/dungeon_crawler.git",
+  "author": "David Ervin <dnervin@student.fullsail.edu>",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "client": "cd app/client && npm i && npm run dev",
+    "server": "cd app/server && npm i && npm run dev",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "license": "MIT"
+}

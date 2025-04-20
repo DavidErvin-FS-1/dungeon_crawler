@@ -36,9 +36,9 @@ function ProloguePage() {
     if (currentIndex < storySegments.length - 1) {
       setCurrentIndex((prev) => prev + 1)
     } else {
-      // ...
+      navigate('/adventure')
     }
-  }, [currentIndex, storySegments])
+  }, [currentIndex, storySegments, navigate])
 
   // Allow "Enter" key to progress the story
   useEffect(() => {
@@ -54,7 +54,7 @@ function ProloguePage() {
   return (
     <>
       <Header />
-      <main className='container flex flex-col items-center justify-center gap-4 p-4 mx-auto h-dvh'>
+      <main className='container flex flex-col items-center justify-center gap-4 p-4 mx-auto h-dvh max-w-xl'>
         {storySegments.length > 0 ? (
           <div className='prologue text-center'>
             <p className='text-xl'>{storySegments[currentIndex]}</p>
