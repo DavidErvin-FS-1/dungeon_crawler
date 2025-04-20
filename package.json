@@ -9,7 +9,7 @@
     "concurrently": "^9.1.2"
   },
   "scripts": {
-    "client": "cd app/client && npm i && npm run dev",
+    "client": "cd app/client && npm i && npm run build",
     "server": "cd app/server && npm i && npm run dev",
     "dev": "concurrently \"npm run client\" \"npm run server\""
   },
