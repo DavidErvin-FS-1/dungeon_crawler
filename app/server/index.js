@@ -36,6 +36,9 @@ app.use('/api/auth', authRoutes)
 app.use('/api/prologue', prologueRoutes)
 app.use('/api/adventure', adventureRoutes)
 
+// Server vite client build
+app.use('/', express.static('../client/dist'))
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack)
