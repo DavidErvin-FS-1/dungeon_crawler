@@ -9,10 +9,10 @@
     "concurrently": "^9.1.2"
   },
   "scripts": {
-    "client": "cd app/client && npm i && npm run build",
-    "server": "cd app/server && npm i && npm run dev",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "start": "npm run client && npm run server"
+    "client": "cd app/client && yarn && yarn run build",
+    "server": "cd app/server && yarn && yarn run dev",
+    "dev": "concurrently \"yarn client\" \"yarn server\"",
+    "start": "yarn client && yarn server"
   },
   "license": "MIT"
 }
