@@ -2,22 +2,24 @@ const cors = require('cors')
 const dotenv = require('dotenv')
 const express = require('express')
 const mongoose = require('mongoose')
+const connectDB = require("./config/db");
 
 // Load environment variables
-dotenv.config()
+dotenv.config();
 
 // Connect to MongoDB
-mongoose
-  .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('Connected to MongoDB')
-  })
-  .catch((err) => {
-    console.error('MongoDB connection error:', err)
-  })
+// mongoose
+//   .connect(process.env.MONGODB_URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => {
+//     console.log('Connected to MongoDB')
+//   })
+//   .catch((err) => {
+//     console.error('MongoDB connection error:', err)
+//   })
+connectDB().catch(console.dir);
 
 // Create an Express application
 const app = express()
